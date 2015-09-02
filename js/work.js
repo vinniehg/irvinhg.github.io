@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){"use strict";setTimeout(function(){var t=document.body.querySelector("#info-cnt");t&&t.classList.add("shown")},400)});
