@@ -1,0 +1,20 @@
+<footer>
+    <div class="footer-wrapper">
+        <div class="information">
+            <p class="hl"> {{ site.description}} </p> 
+            <a href="/colophone">About this page</a>
+            <p>Copyright © {{ site.year }}</p> 
+        </div>
+        <div class="contact">
+            <div class="contact-avatar"><img src="/assets/img/me_small.jpg"/></div>
+            <div class="contact-networks">
+                {% if site.contact.facebook %}<a class="contact-link fa fa-facebook"></a>{% endif %}
+                {% if site.contact.googleplus %}<a class="contact-link fa fa-google-plus"></a>{% endif %}
+                {% if site.contact.twitter %}<a class="contact-link fa fa-twitter"></a>{% endif %}
+                {% if site.contact.github %}<a class="contact-link fa fa-github"></a>{% endif %}
+                {% if site.contact.linkedin %}<a class="contact-link fa fa-linkedin"></a>{% endif %}
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+</footer>

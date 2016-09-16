@@ -1,11 +1,16 @@
+---
+---
 <!DOCTYPE html>
 <html>
+
 <head>
+
+    {% include head.html %}
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
+    <title> {{ site.title }} </title>
     <meta name="description" content="{{ site.name }} - {{ site.description }}" />
 
     <meta name="HandheldFriendly" content="True" />
@@ -13,26 +18,23 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/css/landing.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <script src="https://use.fontawesome.com/1af1da2d00.js"></script>
-
-    {% include head.html %}
 
 </head>
+
 <body>
     <div class="content"> 
         <header class="title">
             <h1> {{site.author}} </h1>
-            <p> {{site.description}} </p>
+            <p> Software Developer </p>
             <div class="avatar"><img src="/assets/img/me_small.jpg"/></div>
             <nav>
                 <a class="nav-link" href="/about" alt="About">About</a>            
-                <a class="nav-link" href="/contact" alt="Contact">Contact</a>
                 <a class="nav-link" href="/blog" alt="Blog">Blog</a>
             </nav>
         </header>
     </div> 
 </body>
 
-{% include analytics.html %}
+    {% include analytics.html %}
 
 </html>

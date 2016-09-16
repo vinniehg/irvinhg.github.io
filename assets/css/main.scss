@@ -1,0 +1,113 @@
+---
+---
+@import "posts";
+@import "footer";
+
+// TODO: Refactor
+$break_small: 500px;
+$break_medium: 800px;
+$break_large: 1600px;
+
+$avatar_size: 202px;
+$color_background: ghostwhite;
+$color_green: #284d13;
+$color_nav_separator: #7b7b7b;
+
+body {
+    margin: 0;
+    font-size: 18px;
+    background-color: $color_background;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 60em;
+    margin: auto;
+}
+
+.header {
+
+    height: 20vh;
+    min-height: 180px;
+    background: url('/assets/img/banner_india_small.jpg');
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+
+    .avatar {
+
+        position: absolute;
+        bottom: -100px;
+        width: 100%;
+
+        img {
+            min-width: $avatar_size; // Prevent from wiggling when loading
+            min-height: $avatar_size;
+            border-radius: 100%;
+            border: 5px solid $color_background;
+            background-color: $color_background;
+        }
+    }
+
+    .home-icon {
+        top: 50px;
+        left: 50px;
+        position: absolute;
+    }
+}
+
+.mainnav {
+
+    text-align: center;
+    padding: 85px 0 5px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+
+    .mainnav-link {
+
+        padding: 3px 8px;
+
+        &.selected {
+            border-bottom: 3px solid $color_nav_separator;
+        }
+    }
+
+    > a {
+
+        margin: 0 20px;
+        font-size: 1em;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        color: #666;
+        transition: color ease-out .2s;
+
+        &:hover {
+            color: #111;
+        }
+    }
+}
+
+.content {
+    padding-top: 30px;
+}
+
+
+@media only screen and (min-width: $break_medium) {
+
+    .header {
+        height: 45vh;
+    }
+}
+
+@media only screen and (min-width: $break_medium) {
+
+    .header {
+        background-image: url('/assets/img/banner_india.jpg');
+    }
+}
+

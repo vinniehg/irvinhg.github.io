@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    {% include head.html %}
+
+    <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+</head>
+<body>
+
+        <header class="header">
+            <span class="home-icon"></span>
+            <div class="avatar">
+                <img src="/assets/img/me_small.jpg">
+            </div>
+        </header>
+
+        <nav class="mainnav">
+            <a class="mainnav-link {% if page.current == 'about' %}selected{% endif %}" href="/about">About</a>
+            <a class="mainnav-link {% if page.current == 'blog' %}selected{% endif %}" href="/blog">Blog</a>
+        </nav>
+
+        <div class="wrapper">
+            <section class="content">
+                {{ content }}
+            </section>
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+{% include analytics.html %}
+
+</html>

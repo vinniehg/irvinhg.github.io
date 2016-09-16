@@ -1,0 +1,161 @@
+
+/*
+* Landing page styles
+*/
+
+$break_small: 500px;
+$break_medium: 800px;
+$break_large: 1600px;
+$color_bg: rgba(255, 255, 255, 0.93);
+$color_text: #333333;
+$color_green: #284d13;
+
+%middle_line {
+    content: '';
+    display: block;
+    position: absolute;
+    height: .1em;
+    background: #d3d3d3;
+    width: calc(50% - 9em);
+    bottom: 11.5em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans',HelveticaNeue,Helvetica,Arial,sans-serif;
+}
+
+.content {
+
+    height: 100vh;
+    text-align: center;
+    vertical-align: baseline;
+    //background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=800) no-repeat center center fixed;
+    background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_small.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    // Ghost element to align content in the center
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        margin-right: 0;
+        vertical-align: middle;
+        width: 1px;
+    }
+}
+
+.title {
+
+    width: 90%;
+    cursor: default;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background: $color_bg;
+    border-radius: 2px;
+    padding: 2.25em 0 2.25em 0;
+    max-width: 35em;
+    font-size: 10px;
+    color: $color_text;
+    box-shadow: 0px 0px 1px 0px rgb(109, 109, 109);
+
+    h1 {
+        font-size: 3.5em;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    p {
+        font-size: 2.5em;
+        margin: 0;
+        font-family: 'Open Sans Condensed',HelveticaNeue,Helvetica,Arial,sans-serif;
+        font-style: italic;
+    }
+
+    // Middle lines
+    &:before {
+        @extend %middle_line;
+        left: 0;
+    }
+    &:after {
+        @extend %middle_line;
+        right: 0;
+    }
+}
+
+.nav-link {
+
+    margin: 0 1.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    color: #666;
+    transition: color ease-out .2s;
+
+    &:hover {
+        color: #111;
+    }
+}
+
+.avatar {
+
+    position: relative;
+
+    img {
+        height: 12em;
+        display: block;
+        margin: 1.5em auto;
+        border-radius: 100%;
+        border-style: none;
+    }
+}
+
+@media only screen and (min-width: $break_small) {
+    .title {
+        top: 0;
+    }
+}
+
+@media only screen and (min-width: $break_medium) {
+    .content {
+        //background: linear-gradient(60deg, rgba(255, 255, 255, 0.24) 5%, rgba(252, 252, 255, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=2000) no-repeat center center fixed;
+        background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_medium.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .title {
+        h1 {
+            font-size: 4em;
+        }
+        p {
+            
+        }
+    }
+}
+
+@media only screen and (min-width: $break_large) {
+    .content {
+        //background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=4000&q=55) no-repeat center center fixed;
+        background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .title {
+
+        font-size: 0.5vw;
+
+        h1 {
+            font-size: 2.25vw;
+        }
+        p {
+            margin: 0;
+            font-size: 1.25vw;
+        }
+    }
+
+    .nav-link {
+        font-size: 0.85vw;
+    }
+}
