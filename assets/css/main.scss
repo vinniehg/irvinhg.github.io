@@ -30,8 +30,9 @@ body {
 
 .header {
 
-    height: 15em;
+    height: 60vw;
     max-height: 85vh;
+    min-height: 10em;
     background: url('/assets/img/banner_india_small.jpg');
     background-position: center center;
     background-size: cover;
