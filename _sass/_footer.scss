@@ -9,6 +9,7 @@ $color_footer_bg: #26272c;
 $color_text: #fff;
 $color_contact_border: #a2a2a2;
 $color_text_highlight: wheat;
+$color_text_hover: #dddbdb;
 
 footer {
 
@@ -33,6 +34,10 @@ footer {
         text-decoration: none;
         cursor: pointer;
         color: $color_text;
+
+        &:hover {
+            color: $color_text_hover;
+        }
     }
 
     .information {
@@ -85,7 +90,6 @@ footer {
         }
     }
 }
-
 
 @media only screen and (min-width: $break_medium) {
 

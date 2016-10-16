@@ -11,14 +11,17 @@
 </head>
 <body>
 
-        <header class="header">
+        <header class="header {{ page.current }}">
             <span class="home-icon"></span>
-            <div class="avatar">
-                <img src="/assets/img/me_small.jpg">
-            </div>
+            {% if page.current == 'about' %}
+                <div class="avatar">
+                    <img src="/assets/img/me_small.jpg">
+                </div>
+            {% endif %}
+            <h1 class="maintitle">{{ page.current | capitalize }}</h1>
         </header>
 
-        <nav class="mainnav">
+        <nav class="mainnav {{ page.current }}">
             <a class="mainnav-link {% if page.current == 'about' %}selected{% endif %}" href="/about">About</a>
             <a class="mainnav-link {% if page.current == 'blog' %}selected{% endif %}" href="/blog">Blog</a>
         </nav>

@@ -15,6 +15,9 @@ show_dir_listing: false
 year: 2016
 permalink: "/blog/:year-:title"
 
+# Tags : Using 'jekyll-catgenerator' plugin in _plugins folder
+tag_path: "/blog/tag/"
+
 # Pagination
 
 paginate: 10
