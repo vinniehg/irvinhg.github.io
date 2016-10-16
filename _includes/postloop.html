@@ -7,6 +7,11 @@
         <section class="post-excerpt">
             <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
         </section>
+        <section class="post-info">
+            {% for tag in post.tags %}
+                <a class="tag"> {{ tag }} </a>
+            {% endfor %}
+        </section>
     </article>
 {% endfor %}
 
