@@ -8,9 +8,8 @@
             <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ post.url }}">&raquo;</a></p>
         </section>
         <section class="post-info">
-            {% for tag in post.tags %}
-                <a class="tag"> {{ tag }} </a>
-            {% endfor %}
+            <span> When: <span>{{ post.date | date: "%b %d, %y" }}</span></span>
+            <span>, Tags: {% for tag in post.tags %} <a class="tag" href="{{ site.tag_path}}{{ tag }}"> {{ tag | capitalize}} </a> {% endfor %} </span>
         </section>
     </article>
 {% endfor %}
