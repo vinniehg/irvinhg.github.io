@@ -20,7 +20,7 @@ tag_path: "/blog/tag/"
 
 # Pagination
 
-paginate: 10
+paginate: 5
 paginate_path: "/blog/page:num/"
 
 # Build settings

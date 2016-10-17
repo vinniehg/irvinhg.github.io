@@ -115,7 +115,7 @@ body {
 
 .content {
 
-    padding-top: 30px;
+    padding-top: 2.5em;
 
     .post-excerpt {
         p {
@@ -141,6 +141,28 @@ body {
     }
 }
 
+.pagination {
+
+    text-align: center;
+    font-size: 0.8em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        margin: 1em;
+        padding: 0.5em;
+        border: 1px solid #9EABB3;
+        border-radius: 2px;
+        color: #9EABB3;
+
+        &:hover {
+            color: #49565e;            
+        }
+    }
+}
+
 @media only screen and (min-width: $break_medium) {
 
     .header {
@@ -156,6 +178,15 @@ body {
         .maintitle {
             font-size: 7em;
             padding-top: 1em;
+        }
+    }
+
+    .pagination {
+        flex-flow: row;
+        align-items: center;
+
+        a {
+            line-height: 1em;
         }
     }
 }
