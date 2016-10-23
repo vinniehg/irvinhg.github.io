@@ -16,6 +16,15 @@ $color_nav_background: #26272c;
 $color_nav_text: #fff;
 $color_nav_text_hover: #dddbdb;
 
+%title {
+    color: $color_nav_text;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+
+%subtitle {
+
+}
+
 body {
     margin: 0;
     font-size: 18px;
@@ -33,17 +42,25 @@ body {
     height: 60vw;
     max-height: 85vh;
     min-height: 10em;
-    background: url('/assets/img/banner_india_small.jpg');
     background-position: center center;
     background-size: cover;
     position: relative;
     text-align: center;
+    user-select: none;
+
+    &.about {
+        background-image: url('/assets/img/banner_india_small.jpg');
+    }
+
+    &.blog {
+        background-image: url('/assets/img/banner_iceland_small.jpg');
+    }
 
     .avatar {
 
-        width: 100%;
         position: absolute;
         bottom: 1em;
+        width: 100%;
         display: none;
 
         img {
@@ -61,12 +78,20 @@ body {
     }
 
     .maintitle {
+        @extend %title;
+        font-size: 4em;
         display: inline-block;
         vertical-align: middle;
         margin: 0;
-        font-size: 4em;
-        color: $color_nav_text;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+    }
+
+    .subtitle {
+        @extend %title;
+        position: absolute;
+        bottom: .1em;
+        width: 100%;
+        text-align: center;
+        font-size: 1.6em;
     }
 
     // Ghost element for centering
@@ -179,6 +204,11 @@ body {
             font-size: 7em;
             padding-top: 1em;
         }
+
+        .subtitle {
+            font-size: 3em;
+            bottom: 1em;
+        }
     }
 
     .pagination {
@@ -193,8 +223,17 @@ body {
 
 @media only screen and (min-width: $break_medium) {
     .header {
-        background-image: url('/assets/img/banner_india.jpg');
         height: 44em;
+
+        &.about {
+            background-image: url('/assets/img/banner_india.jpg');
+            
+        }
+
+        &.blog {
+            background-image: url('/assets/img/banner_iceland.jpg');
+            background-size: cover;
+        }
 
         .avatar {
             display: block;

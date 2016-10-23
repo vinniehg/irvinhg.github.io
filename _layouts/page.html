@@ -19,6 +19,9 @@
                 </div>
             {% endif %}
             <h1 class="maintitle">{{ page.current | capitalize }}</h1>
+            {% if page.tag %}
+                <h2 class="subtitle">{{ page.tag | capitalize }}</h2>
+            {% endif %}
         </header>
 
         <nav class="mainnav {{ page.current }}">
