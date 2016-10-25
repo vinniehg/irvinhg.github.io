@@ -2,7 +2,9 @@
 # Configuration
 
 title: Irvin Herrera
-author: Irvin Herrera
+author:
+  name: Irvin Herrera
+  title: Software Developper
 email: irvin.herrerag@gmail.com
 language: 'en-us'
 description: >

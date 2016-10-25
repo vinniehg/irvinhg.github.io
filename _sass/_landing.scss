@@ -3,21 +3,40 @@
 * Landing page styles
 */
 
+@import "font-awesome.min.css";
+
+* {
+    box-sizing: border-box;
+}
+
 $break_small: 500px;
 $break_medium: 800px;
 $break_large: 1600px;
 $color_bg: rgba(255, 255, 255, 0.93);
-$color_text: #333333;
+$color_text: #4c4c4c;
+$color_text_hover: black;
 $color_green: #284d13;
+$color_border: #b3b3b3;
 
-%middle_line {
+%ghost {
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        margin-right: 0;
+        vertical-align: middle;
+        width: 1px;
+    }
+}
+
+%avatar-line {
     content: '';
     display: block;
     position: absolute;
-    height: .1em;
-    background: #d3d3d3;
-    width: calc(50% - 9em);
-    bottom: 11.5em;
+    top: 33%;
+    width: 30%;
+    height: 1px;
+    background: $color_border
 }
 
 body {
@@ -31,24 +50,17 @@ body {
     height: 100vh;
     text-align: center;
     vertical-align: baseline;
-    //background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=800) no-repeat center center fixed;
     background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_small.jpg') no-repeat center center fixed;
     background-size: cover;
 
-    // Ghost element to align content in the center
-    &::before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        margin-right: 0;
-        vertical-align: middle;
-        width: 1px;
-    }
+    @extend %ghost;
 }
 
 .title {
 
     width: 90%;
+    max-width: 50em;
+    height: 33em;
     cursor: default;
     display: inline-block;
     position: relative;
@@ -56,11 +68,27 @@ body {
     vertical-align: middle;
     background: $color_bg;
     border-radius: 2px;
-    padding: 2.25em 0 2.25em 0;
-    max-width: 35em;
     font-size: 10px;
     color: $color_text;
-    box-shadow: 0px 0px 1px 0px rgb(109, 109, 109);
+    box-shadow: 0px 0px 1px 0px $color_border;
+
+    .title-wrapper {
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        &::before {
+            @extend %avatar-line;
+            left: 0;
+        }
+
+        &::after {
+            @extend %avatar-line;
+            right: 0;
+        }
+    }
 
     h1 {
         font-size: 3.5em;
@@ -70,40 +98,55 @@ body {
 
     p {
         font-size: 2.5em;
-        margin: 0;
+        margin: .4em 0 0 0;
         font-family: 'Open Sans Condensed',HelveticaNeue,Helvetica,Arial,sans-serif;
         font-style: italic;
     }
+}
 
-    // Middle lines
-    &:before {
-        @extend %middle_line;
-        left: 0;
+.information {
+
+    padding-top: 1em;
+    line-height: 3em;
+
+    flex: 1 0 auto;
+    order: 1;
+
+    .nav-links {
+        font-size: 1.1em;
+        padding-top: 1.7em;
     }
-    &:after {
-        @extend %middle_line;
-        right: 0;
+
+    .nav-link {
+
+        margin: 0 1.5em;
+        font-size: 1.5em;
+        text-decoration: none;
+        position: relative;
+        cursor: pointer;
+        color: $color_text;
+        transition: color ease-out .2s;
+
+        &:hover {
+            color: $color_text_hover;
+        }
     }
 }
 
-.nav-link {
+.contact {
 
-    margin: 0 1.5em;
-    font-size: 1.5em;
-    text-decoration: none;
-    position: relative;
-    cursor: pointer;
-    color: #666;
-    transition: color ease-out .2s;
+    min-width: 25em;
+    min-height: 50%;
+    padding: 3em 3em 0 3em;
+    flex: 0 0 auto;
+    order: 0;
 
-    &:hover {
-        color: #111;
-    }
+    @extend %ghost;
 }
 
-.avatar {
+.contact-avatar {
 
-    position: relative;
+    display: inline-block;
 
     img {
         height: 12em;
@@ -114,19 +157,76 @@ body {
     }
 }
 
+.contact-networks {
+
+    display: none;
+    font-size: 2em;
+    width: 100%;
+    padding-top: .4em;
+    text-align: center;
+
+    .contact-link {
+
+        padding: 0 0.3em;
+        text-decoration: none;
+        cursor: pointer;
+        color: $color_text;
+
+        &:hover {
+            color: $color_text_hover;
+        }
+    }
+}
+
 @media only screen and (min-width: $break_small) {
     .title {
+        height: 29em;
         top: 0;
+
+        .title-wrapper {
+            flex-flow: row;
+
+            &::before {
+                content: none;
+            }
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .information {
+        min-height: 90%;
+        padding-top: 7em;
+        line-height: 4.5em;
+
+        order: 0;
+    }
+    .contact {
+        padding: 0 3em;
+        border-left: 1px solid $color_border;
+
+        order: 1;
+    }
+    .contact-networks {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: $break_small + 100) {
+    .contact {
+        display: block;
     }
 }
 
 @media only screen and (min-width: $break_medium) {
     .content {
-        //background: linear-gradient(60deg, rgba(255, 255, 255, 0.24) 5%, rgba(252, 252, 255, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=2000) no-repeat center center fixed;
         background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_medium.jpg') no-repeat center center fixed;
         background-size: cover;
     }
     .title {
+
+        max-width: 60em;
+
         h1 {
             font-size: 4em;
         }
@@ -134,28 +234,35 @@ body {
             
         }
     }
+
+    .contact {
+        min-width: 30em;
+    }
 }
 
 @media only screen and (min-width: $break_large) {
+
     .content {
-        //background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url(http://herrirvin.imgix.net/0007.jpg?w=4000&q=55) no-repeat center center fixed;
         background: linear-gradient(60deg, rgba(145, 142, 241, 0.24) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007.jpg') no-repeat center center fixed;
         background-size: cover;
     }
-    .title {
 
-        font-size: 0.5vw;
-
-        h1 {
-            font-size: 2.25vw;
-        }
-        p {
-            margin: 0;
-            font-size: 1.25vw;
-        }
-    }
-
-    .nav-link {
-        font-size: 0.85vw;
-    }
+    /** 
+    * FIXME: Add if we want to vary the size of the text with VW
+    *.title {
+    *     font-size: 0.5vw;
+    *
+    *     h1 {
+    *         font-size: 2.25vw;
+    *     }
+    *     p {
+    *         margin: 0;
+    *         font-size: 1.25vw;
+    *     }
+    * }
+    *
+    * .nav-link {
+    *     font-size: 0.85vw;
+    * }
+    */
 }
