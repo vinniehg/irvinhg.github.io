@@ -5,7 +5,6 @@
     {% include head.html %}
 
     <title>{% if page.title %}{{ page.title }}{% elsif site.name %}{{ site.name }}{% endif %}</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
 
 </head>
@@ -13,14 +12,18 @@
 
         <header class="header {{ page.current }}">
             <span class="home-icon"></span>
-            {% if page.current == 'about' %}
-                <div class="avatar">
-                    <img src="/assets/img/me_small.jpg">
-                </div>
-            {% endif %}
-            <h1 class="maintitle">{{ page.current | capitalize }}</h1>
-            {% if page.tag %}
-                <h2 class="subtitle">{{ page.tag | capitalize }}</h2>
+            {% if page.type == 'post' %}
+                 <h1 class="maintitle">{{ page.title | capitalize }}</h1>
+            {% else %}
+                {% if page.current == 'about' %}
+                    <div class="avatar">
+                        <img src="/assets/img/me_small.jpg">
+                    </div>
+                {% endif %}
+                <h1 class="maintitle">{{ page.current | capitalize }}</h1>
+                {% if page.tag %}
+                    <h2 class="subtitle">{{ page.tag | capitalize }}</h2>
+                {% endif %} 
             {% endif %}
         </header>
 
@@ -42,4 +45,13 @@
 
 {% include analytics.html %}
 
+     {% if page.type == 'post' %}
+        <style>
+            .header {
+                background-image: url('{{ page.cover }}');
+            }    
+        </style> 
+     {% endif %}
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </html>
