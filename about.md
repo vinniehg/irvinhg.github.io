@@ -14,9 +14,6 @@ I'm a Software Developer currently based in Paris, France. I enjoy reading a goo
 #### Web Dashboard Solution ####
 At *Dassault Systèmes* I worked in a completely customizable Web Dashboard Application where users can work collaboratively to bring solutions to complex problems. By using prepackaged widgets, or making their own, users can manage their information to see just what they need to make smart and quick decisions. In a world where there is so much information being generated everyday, using these types of tools is key to making smart and quick decisions that can make your business grow more efficiently.
 
-![Web Dashboard Application](/assets/img/dashboard-compass.jpg)
-<p></p>
-
 #### Web User-Interface Components ####
 <p></p>
 Apart from working on the general solution of the Web Dashboard, I also developped several UI components that were the basis for other web applications within the *Dassault Systèmes* ecosystem of applications. An example of an UI component I developed is a dynamic tree-based navigation component in which developers could define a base (root) and generate the tree navigation dynamically depending on their data.
