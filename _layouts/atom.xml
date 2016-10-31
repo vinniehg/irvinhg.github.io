@@ -2,11 +2,7 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-   {% if page.grouptype == 'category' %}
-      <title>{{ site.short_url }} - Category: {{ page.category }}</title>
-   {% else %}
-      <title>{{ site.short_url }}</title>
-   {% endif %}
+   <title>{{ page.title }} </title>
    <link>{{ site.url }}</link>
    <description>{{ site.description }}</description>
    <language>{{ site.language }}</language>
