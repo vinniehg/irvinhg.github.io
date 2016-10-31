@@ -11,6 +11,7 @@ I'm a Software Developer currently based in Paris, France. I enjoy reading a goo
 
 ### Past work ###
 <p></p>
+
 #### Web Dashboard Solution ####
 At *Dassault Systèmes* I worked in a completely customizable Web Dashboard Application where users can work collaboratively to bring solutions to complex problems. By using prepackaged widgets, or making their own, users can manage their information to see just what they need to make smart and quick decisions. In a world where there is so much information being generated everyday, using these types of tools is key to making smart and quick decisions that can make your business grow more efficiently.
 
