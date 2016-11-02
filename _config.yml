@@ -8,7 +8,7 @@ author:
 email: irvin.herrerag@gmail.com
 language: 'en-us'
 description: >
-  Hello ! Thanks for visiting :)
+  Personal website and Blog
 url: 'http://herrirvin.com'
 twitter_username: irvinhg
 google_analytics: TODO
@@ -33,11 +33,11 @@ highlighter: rouge
 # Contact links
 
 contact:
-  googleplus : 'irvin.herrerag@gmail.com'
-  github: 'irvinhg'
-  twitter: 'twitter'
-  linkedin: 'blabla'
-  facebook: ''
+  #googleplus : ''
+  github: 'https://github.com/irvinhg'
+  twitter: 'https://twitter.com/irvin_herrera'
+  linkedin: 'https://fr.linkedin.com/in/irvin-herrera-6350a726'
+  #facebook: ''
   blog: '/blog'
 
 # CDN
