@@ -12,6 +12,10 @@ I'm a Software Developer currently based in Paris, France. I enjoy reading a goo
 ### Past work ###
 <p></p>
 
+#### Cloud Deployment Team ####
+<p></p>
+I'm currently working in bringing the capability of continious deployment and testing to users at *Dassault Systèmes*. As part of the Cloud Deployment team we want our projects to be production ready as soon as possible and we want to bring zero-downtime to our applications once they are deployed.
+
 #### Web Dashboard Solution ####
 <p></p>
 At *Dassault Systèmes* I worked in a completely customizable Web Dashboard Application where users can work collaboratively to bring solutions to complex problems. By using prepackaged widgets, or making their own, users can manage their information to see just what they need to make smart and quick decisions. In a world where there is so much information being generated everyday, using these types of tools is key to making smart and quick decisions that can make your business grow more efficiently.
@@ -26,4 +30,4 @@ As part of *Dassault Systèmes* Web Dashboard solution, there are included sever
 
 ### Interests & Hobbies ###
 <p></p>
-I love running, biking, hiking and the general outdoors. I find myself playing bass from time to time and just enoying a good time out with my friends. One day I hope I'll be good at mountain biking, for the moment I just find myself falling... a lot.
+I love running, biking, hiking and the general outdoors. I find myself playing bass from time to time and just enjoying a good time out with my friends. One day I hope I'll be good at mountain biking, for the moment I just find myself falling... a lot.
