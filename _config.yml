@@ -5,7 +5,6 @@ title: Irvin Herrera
 author:
   name: Irvin Herrera
   title: Software Developer
-email: irvin.herrerag@gmail.com
 language: 'en-us'
 description: >
   Personal website and Blog
@@ -42,7 +41,7 @@ contact:
 
 # CDN
 
-cdn_baseurl: 'http://herrirvin.imgnx.net'
+cdn_baseurl: 'https://herrirvin.imgix.net/'
 
 # Gems & other
 
