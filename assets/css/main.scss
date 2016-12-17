@@ -220,7 +220,9 @@ body {
 
 @media only screen and (min-width: $break_medium) {
     .header {
+
         height: 44em;
+        max-height: none;
 
         &.about {
             background-image: url('/assets/img/banner_india.jpg');
@@ -237,10 +239,3 @@ body {
         }
     }
 }
-
-@media only screen and (min-width: $break_large) {
-    .header {
-        max-height: none;
-    }
-}
-
