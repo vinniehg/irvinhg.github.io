@@ -9,7 +9,7 @@
         </section>
         <section class="post-info">
             <span> When: <span>{{ post.date | date: "%b %d, %y" }}</span></span>
-            <span>, Tags: {% for tag in post.tags %} <a class="tag" href="{{ site.tag_path}}{{ tag }}"> {{ tag | capitalize}} </a> {% endfor %} </span>
+            <!--Not supported <span>, Tags: {% for tag in post.tags %} <a class="tag" href="{{ site.tag_path}}{{ tag }}"> {{ tag | capitalize}} </a> {% endfor %} </span>-->
         </section>
     </article>
 {% endfor %}
