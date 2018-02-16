@@ -7,14 +7,14 @@ permalink: /about/
 
 ### About me ###
 <p></p>
-I'm a Software Developer currently based in Paris, France. I enjoy reading a good book, watching a classical film in a calm Sunday night and travelling every chance I get. I got my Bacherlor's degree in Electronic Engineering in 2011, worked for a little bit and then decided to come to Paris to get my Master's degree in Networked Computer Systems. I've been living here for 4 years now.
+I'm a Software Engineer currently based in Paris, France. I enjoy reading a good book, watching a classical film in a calm Sunday night and travelling every chance I get. I got my Bacherlor's degree in Electronic Engineering in 2011, worked for a little bit and then decided to come to Paris to get my Master's degree in Networked Computer Systems. I've been living here ever since.
 
 ### Past work ###
 <p></p>
 
-#### Cloud Deployment Team ####
+#### Cloud Orchestration Team ####
 <p></p>
-I'm currently working in bringing the capability of continious deployment and testing to users at *Dassault Systèmes*. As part of the Cloud Deployment team we want our projects to be production ready as soon as possible and we want to bring zero-downtime to our applications once they are deployed.
+I'm currently working in bringing the capability of continious deployment and testing to users at *Dassault Systèmes*. As part of the Cloud Orchestration team we want our projects to be production ready as soon as possible and we want to bring zero-downtime to our applications once they are deployed.
 
 #### Web Dashboard Solution ####
 <p></p>

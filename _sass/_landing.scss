@@ -179,6 +179,7 @@ body {
 }
 
 @media only screen and (min-width: $break_small) {
+
     .title {
         height: 29em;
         top: 0;
@@ -194,6 +195,7 @@ body {
             }
         }
     }
+
     .information {
         min-height: 90%;
         padding-top: 7em;
@@ -201,28 +203,33 @@ body {
 
         order: 0;
     }
+
     .contact {
         padding: 0 3em;
         border-left: 1px solid $color_border;
 
         order: 1;
     }
+
     .contact-networks {
         display: block;
     }
 }
 
 @media only screen and (min-width: $break_small + 100) {
+
     .contact {
         display: block;
     }
 }
 
 @media only screen and (min-width: $break_medium) {
+
     .content {
         background: linear-gradient(60deg, rgba(0, 23, 4, 0.2) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_medium.jpg') no-repeat center center fixed;
         background-size: cover;
     }
+
     .title {
 
         max-width: 60em;
@@ -238,8 +245,9 @@ body {
 }
 
 @media only screen and (min-width: $break_large) {
+
     .content {
-        background: linear-gradient(60deg, rgba(0, 23, 4, 0.2) 5%, rgba(255, 227, 227, 0.29)), url('https://herrirvin.imgix.net/iceland/0007.jpg?s=90dc93c831e78d4ae811878df7cbc269') no-repeat center center fixed;
+        background: linear-gradient(60deg, rgba(0, 23, 4, 0.2) 5%, rgba(255, 227, 227, 0.29)), url('/assets/img/0007_medium.jpg') no-repeat center center fixed;
         background-size: cover;
     }
 }

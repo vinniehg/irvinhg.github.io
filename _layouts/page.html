@@ -45,13 +45,42 @@
 
 {% include analytics.html %}
 
-     {% if page.type == 'post' %}
-        <style>
-            .header {
-                background-image: url('{{ page.cover }}');
-            }    
-        </style> 
-     {% endif %}
+{% if page.type == 'post' %}
+
+{% comment %}
+    $break_small: 500px;
+    $break_medium: 800px;
+    $break_large: 1600px;
+{% endcomment %}
+
+<style>
+
+.header.blog {
+    background-image: url('{{ page.cover }}_small.jpg');
+}
+
+@media only screen and (min-width: 800px) {
+
+    .header {
+        height: 44em;
+        max-height: none;
+    }
+
+    .header.blog {
+        background-image: url('{{ page.cover }}_medium.jpg');
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .header.blog {
+        background-image: url('{{ page.cover }}.jpg');
+    }
+}
+
+</style> 
+{% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 </html>

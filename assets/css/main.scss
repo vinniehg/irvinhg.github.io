@@ -225,12 +225,11 @@ body {
         max-height: none;
 
         &.about {
-            background-image: url('https://herrirvin.imgix.net/generic/banner_india.jpg?s=e8ee6d6468606d83bc2b86de779cbcd6');
-            
+            background-image: url('/assets/img/banner_india.jpg');
         }
 
         &.blog {
-            background-image: url('https://herrirvin.imgix.net/generic/banner_iceland.jpg?s=b752b0b7e07ef9da09eaa9a12d37ea61');
+            background-image: url('/assets/img/banner_iceland.jpg');
             background-size: cover;
         }
 
