@@ -4,7 +4,7 @@
 title: Irvin Herrera
 author:
   name: Irvin Herrera
-  title: Software Developer
+  title: Software Engineer
 language: 'en-us'
 description: >
   Personal website and Blog
@@ -13,7 +13,7 @@ twitter_username: irvinhg
 google_analytics: TODO
 baseurl: ""
 show_dir_listing: false
-year: 2016
+year: 2018
 permalink: "/blog/:year-:title"
 
 # Tags : Using 'jekyll-catgenerator' plugin in _plugins folder
@@ -41,7 +41,7 @@ contact:
 
 # CDN
 
-cdn_baseurl: 'https://herrirvin.imgix.net/'
+cdn_baseurl: 'https://s3.eu-west-3.amazonaws.com/herrirvin-eu1'
 
 # Gems & other
 
