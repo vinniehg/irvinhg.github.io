@@ -8,12 +8,12 @@ author:
 language: 'en-us'
 description: >
   Personal website and Blog
-url: 'http://herrirvin.com'
+url: 'https://herrirvin.com'
 twitter_username: irvinhg
 google_analytics: TODO
 baseurl: ""
 show_dir_listing: false
-year: 2018
+year: 2019
 permalink: "/blog/:year-:title"
 
 # Tags : Using 'jekyll-catgenerator' plugin in _plugins folder
@@ -45,7 +45,7 @@ cdn_baseurl: 'https://s3.eu-west-3.amazonaws.com/herrirvin-eu1'
 
 # Gems & other
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 exclude:
   - README.md
