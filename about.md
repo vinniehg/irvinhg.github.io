@@ -7,18 +7,25 @@ permalink: /about/
 
 ### About me ###
 <p></p>
+
 I'm a Software Engineer currently based in Paris, France. I enjoy reading a good book, watching a classical film in a calm Sunday night and travelling every chance I get. I got my Bacherlor's degree in Electronic Engineering in 2011, worked for a little bit and then decided to come to Paris to get my Master's degree in Networked Computer Systems. I've been living here ever since.
 
 ### Past work ###
 <p></p>
 
+#### Expedia Group ####
+<p></p>
+
+I'm currently working for *Expedia Group*, in the business-to-business branch. It's a very cool environment that's ever changing, many different challenges in the world of travel.
+
 #### Cloud Orchestration Team ####
 <p></p>
-I'm currently working in bringing the capability of continious deployment and testing to users at *Dassault Systèmes*. As part of the Cloud Orchestration team we want our projects to be production ready as soon as possible and we want to bring zero-downtime to our applications once they are deployed.
+
+I worked for a while in the cloud orchestration team at *Dassault Systèmes*, I had a great time and met some very interesting people. The goal of our team/project was to deploy production-ready applications on different clouds using our own cloud abstraction tool. We provided some other cloud abstractions for zero-downtime upgrades, sandbox deployments, etc.
 
 #### Web Dashboard Solution ####
 <p></p>
-At *Dassault Systèmes* I worked in a completely customizable Web Dashboard Application where users can work collaboratively to bring solutions to complex problems. By using prepackaged widgets, or making their own, users can manage their information to see just what they need to make smart and quick decisions. In a world where there is so much information being generated everyday, using these types of tools is key to making smart and quick decisions that can make your business grow more efficiently.
+Also at *Dassault Systèmes* I worked in a completely customizable Web Dashboard Application where users can work collaboratively to bring solutions to complex problems. By using prepackaged widgets, or making their own, users can manage their information to see just what they need to make smart and quick decisions. In a world where there is so much information being generated everyday, using these types of tools is key to making smart and quick decisions that can make your business grow more efficiently.
 
 #### Web User-Interface Components ####
 <p></p>
