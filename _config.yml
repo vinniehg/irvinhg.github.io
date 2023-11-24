@@ -13,7 +13,7 @@ twitter_username: irvinhg
 google_analytics: TODO
 baseurl: ""
 show_dir_listing: false
-year: 2019
+year: 2023
 permalink: "/blog/:year-:title"
 
 # Tags : Using 'jekyll-catgenerator' plugin in _plugins folder
